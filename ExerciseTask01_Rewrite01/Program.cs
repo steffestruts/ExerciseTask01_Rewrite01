@@ -5,6 +5,7 @@
 List<string> ShoppingList = new List<string>();
 Console.WriteLine("Välkommen till din shoppinglista3000! \n");
 Console.WriteLine("Skriv in produkter du vill lägga till, behöver du ta bort får du göra klart listan.\n");
+Console.WriteLine("Du kan skriva klar för visa listan.\n");
 
 // Loopar igenom tills avslutningsord är skrivet
 while (true)
@@ -30,18 +31,18 @@ foreach (string Shopping in ShoppingList)
     Console.WriteLine("- " + Shopping);
 }
 
-// Second part of program - Remove a product
+// Andra delen av programmet - Ta bort en produkt
 while (true)
 {
     // Skriv produktens namn för ta bort den
-    Console.WriteLine("Skriv in namnet på produkten som du vill ta bort. För att avsluta: skriv sluta eller nej");
+    Console.WriteLine("Skriv in namnet på produkten som du vill ta bort. För att avsluta: skriv sluta. \n");
     string ShoppingItem = Console.ReadLine()!;
 
     // Avslutningsord: sluta eller nej
-    if (ShoppingItem.ToLower() == "sluta" || ShoppingItem.ToLower() == "nej")
+    if (ShoppingItem.ToLower() == "sluta")
     {
         Console.Clear();
-        Console.WriteLine("Klar med inmatningen. Så ser listan ut efter ändringar: \n");
+        Console.WriteLine("Klar med inmatningen. Så ser listan ut efter ändringarna: \n");
         break;
     }
     // Tar bort förmålet som blev inskrivet
