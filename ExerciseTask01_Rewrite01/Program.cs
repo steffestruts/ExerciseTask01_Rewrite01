@@ -35,7 +35,7 @@ foreach (string Shopping in ShoppingList)
 while (true)
 {
     // Skriv produktens namn för ta bort den
-    Console.WriteLine("Skriv in namnet på produkten som du vill ta bort. För att avsluta: skriv sluta. \n");
+    Console.WriteLine("\nSkriv in namnet på produkten som du vill ta bort. För att avsluta: skriv sluta.");
     string ShoppingItem = Console.ReadLine()!;
 
     // Avslutningsord: sluta eller nej
